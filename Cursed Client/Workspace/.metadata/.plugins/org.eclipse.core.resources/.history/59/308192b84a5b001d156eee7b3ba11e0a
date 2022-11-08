@@ -1,0 +1,33 @@
+package customclient.ui;
+
+import java.awt.Color;
+import java.util.Comparator;
+
+import customclient.module.Mod;
+import customclient.module.ModuleManager;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.util.math.MatrixStack;
+
+public class Hud {
+
+	private static MinecraftClient mc = MinecraftClient.getInstance();
+	
+	public static void render(MatrixStack matrics, float tickDelta) {
+		renderArrayList(matrics);
+	}
+	
+	public static void renderArrayList(MatrixStack matrics) {
+		int index = 0;
+		int sWidth = mc.getWindow().getScaledWidth();
+		int sHeight = mc.getWindow().getScaledHeight();
+		
+		ModuleManager.INSTANCE.getEnabledModules().sort(Comparator.comparingInt(m -> (int)));
+		
+		for (Mod mod : ModuleManager.INSTANCE.getEnabledModules() ) {
+			mc.textRenderer.drawWithShadow(matrics, mod.getDisplayName(), (sWidth -4) - mc.textRenderer.getWidth(mod.getDisplayName()), 10 +(index * mc.textRenderer.fontHeight), -1);
+			index++;
+		}
+	}
+	
+
+}

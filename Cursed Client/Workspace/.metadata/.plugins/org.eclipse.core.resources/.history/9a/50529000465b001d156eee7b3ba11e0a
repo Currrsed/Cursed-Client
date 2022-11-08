@@ -1,0 +1,24 @@
+package customclient.ui;
+
+import java.awt.Color;
+
+import customclient.module.Mod;
+import customclient.module.ModuleManager;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.util.math.MatrixStack;
+
+public class Hud {
+
+	private static MinecraftClient mc = MinecraftClient.getInstance();
+	public static void render(MatrixStack matrics, float tickDelta) {
+	}
+	
+	public void renderArrayList(MatrixStack matrics) {
+		int index = 0;
+		for (Mod mod : ModuleManager.INSTANCE.getEnabledModules() ) {
+			mc.textRenderer.drawWithShadow(matrics, mod mod.getName(), index, index, index)
+		}
+	}
+	
+
+}

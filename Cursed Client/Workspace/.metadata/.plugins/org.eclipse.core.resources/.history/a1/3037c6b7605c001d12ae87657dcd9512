@@ -1,0 +1,11 @@
+package customclient.module.movement;
+
+import customclient.module.Mod;
+
+public class NoLevitation extends Mod{
+	
+	public NoLevitation() {
+		super("NoLevitation", "Removes the levitation effect when applied", Category.MOVEMENT);
+	}
+
+}

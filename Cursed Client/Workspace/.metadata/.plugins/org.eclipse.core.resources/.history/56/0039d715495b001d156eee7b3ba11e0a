@@ -1,0 +1,15 @@
+package customclient.module.movement;
+
+import customclient.module.Mod;
+
+public class Sprint extends Mod {
+
+	public Sprint() {
+		super("Sprint", "Keeps your sprint", Category.MOVEMENT);
+	}
+	@Override
+	public void onTick() {
+		mc.player.setSprinting(true);
+		super.onTick();
+	}
+}

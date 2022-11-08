@@ -1,0 +1,11 @@
+package customclient.module.settings;
+
+public class BooleanSetting extends Setting {
+	
+	private boolean enabled;
+	
+	public BooleanSetting(String name, boolean defaultValue) {
+		
+	}
+
+}

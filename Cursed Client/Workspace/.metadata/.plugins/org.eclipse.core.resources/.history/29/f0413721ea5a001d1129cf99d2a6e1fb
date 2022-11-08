@@ -1,0 +1,5 @@
+package customclient.module.movement;
+
+public class Flight {
+
+}

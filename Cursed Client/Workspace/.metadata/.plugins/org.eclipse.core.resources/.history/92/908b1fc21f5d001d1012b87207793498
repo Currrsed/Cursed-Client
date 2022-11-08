@@ -1,0 +1,14 @@
+package customclient.ui.screens.clickgui.setting;
+
+import customclient.module.settings.Setting;
+import net.minecraft.client.util.math.MatrixStack;
+
+public class Component {
+
+	public Component(Setting setting, button parent) {
+		
+	}
+	public void render(MatrixStack matrics, int mouseX, int mouseY, float delta) {
+		
+	}
+}

@@ -1,0 +1,34 @@
+package customclient.module.movement;
+
+import org.lwjgl.glfw.GLFW;
+
+import customclient.module.Mod;
+import customclient.module.Mod.Category;
+import customclient.module.settings.BooleanSetting;
+import customclient.module.settings.ModeSetting;
+import customclient.module.settings.NumberSetting;
+
+public class Flight extends Mod {
+	
+	public NumberSetting speed = new NumberSetting("Speed", 0, 10, 1, 0.1);
+	public BooleanSetting testBool = new BooleanSetting("Check", true);
+	public ModeSetting testMode = new ModeSetting("Mode", "Test", "Test", "Test 2", "Test 3");
+
+	public Flight() {
+		super("Flight", "Allows Flight", Category.MOVEMENT);
+		this.setKey(GLFW.GLFW_KEY_G);
+		addSettings(speed, testBool, testMode);
+	}
+	@Override
+	public void onTick() {
+		mc.player.getAbilities().flying = true;
+		mc.player.getAbilities().setFlySpeed(speed.getValueFloat());
+		super.onTick();
+	}
+	@Override
+	public void onDisable() {
+		mc.player.getAbilities().flying = false;
+		super.onDisable();
+	}
+
+}

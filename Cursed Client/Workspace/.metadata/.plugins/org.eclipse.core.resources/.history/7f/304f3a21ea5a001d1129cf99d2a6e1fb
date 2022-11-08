@@ -1,0 +1,7 @@
+package customclient.module.movement;
+
+import customclient.module.Mod;
+
+public class flight extends Mod {
+
+}

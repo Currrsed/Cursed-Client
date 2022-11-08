@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="customclient.module.Mod"/>
+    <fullyQualifiedTypeName name="java.awt.Button"/>
+    <fullyQualifiedTypeName name="customclient.ui.screens.clickgui.ModuleButton"/>
+    <fullyQualifiedTypeName name="com.ibm.icu.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.math.RoundingMode"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="customclient.module.settings.Setting"/>
+    <fullyQualifiedTypeName name="customclient.ui.screens.clickgui.setting.CheckBox"/>
+    <fullyQualifiedTypeName name="customclient.module.settings.NumberSetting"/>
+    <fullyQualifiedTypeName name="customclient.ui.screens.clickgui.setting.ModeBox"/>
+    <fullyQualifiedTypeName name="customclient.ui.screens.clickgui.setting.Slider"/>
+    <fullyQualifiedTypeName name="customclient.module.settings.BooleanSetting"/>
+    <fullyQualifiedTypeName name="customclient.module.settings.ModeSetting"/>
+    <fullyQualifiedTypeName name="customclient.ui.screens.clickgui.setting.Component"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.MinecraftClient"/>
+</qualifiedTypeNameHistroy>

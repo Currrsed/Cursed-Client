@@ -1,0 +1,5 @@
+package customclient.module.settings;
+
+public class Settings {
+
+}

@@ -1,0 +1,12 @@
+package customclient.module.movement;
+
+import customclient.module.Mod;
+import customclient.module.Mod.Category;
+
+public class Flight extends Mod {
+	
+	public flight(String name, String description, Category category ) {
+		super(name, description, category);
+	}
+
+}

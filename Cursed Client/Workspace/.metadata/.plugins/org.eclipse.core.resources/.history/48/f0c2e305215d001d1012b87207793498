@@ -1,0 +1,26 @@
+package customclient.ui.screens.clickgui.setting;
+
+import customclient.module.settings.NumberSetting;
+import customclient.module.settings.Setting;
+import customclient.ui.screens.clickgui.ModuleButton;
+import net.minecraft.client.util.math.MatrixStack;
+
+public class Slider extends Component {
+	
+	public NumberSetting numbSet = (NumberSetting)setting;
+	
+	public Slider(Setting setting, ModuleButton parent, int offset) {
+		super(setting, parent, offset);
+		this.numbSet = (NumberSetting)setting;
+	}
+	@Override
+	public void render(MatrixStack matrics, int mouseX, int mouseY, float delta) {
+		// TODO Auto-generated method stub
+		super.render(matrics, mouseX, mouseY, delta);
+	}
+	@Override
+	public void mouseClicked(double mouseX, double mouseY, int button) {
+		// TODO Auto-generated method stub
+		super.mouseClicked(mouseX, mouseY, button);
+	}
+}

@@ -1,0 +1,5 @@
+package customclient.mixins;
+
+public class KeyboardMixin {
+
+}

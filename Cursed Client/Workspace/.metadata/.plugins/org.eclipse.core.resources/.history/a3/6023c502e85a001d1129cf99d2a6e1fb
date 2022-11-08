@@ -1,0 +1,5 @@
+package customclient.module;
+
+public class ModuleManager {
+
+}

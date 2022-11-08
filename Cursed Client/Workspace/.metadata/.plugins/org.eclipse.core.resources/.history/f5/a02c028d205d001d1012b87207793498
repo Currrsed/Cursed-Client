@@ -1,0 +1,5 @@
+package customclient.ui.screens.clickgui.setting;
+
+public class ModeBox {
+
+}

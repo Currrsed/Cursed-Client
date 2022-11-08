@@ -1,0 +1,27 @@
+package customclient.module.movement;
+
+import org.lwjgl.glfw.GLFW;
+
+import customclient.module.Mod;
+import customclient.module.Mod.Category;
+
+public class Flight extends Mod {
+	
+	public NumbberSetting speed = new NumberSetting("Speed", 0, 10, 1, 0.1);
+
+	public Flight() {
+		super("Flight", "Allows Flight", Category.MOVEMENT);
+		this.setKey(GLFW.GLFW_KEY_G);
+	}
+	@Override
+	public void onTick() {
+		mc.player.getAbilities().flying = true;
+		super.onTick();
+	}
+	@Override
+	public void onDisable() {
+		mc.player.getAbilities().flying = false;
+		super.onDisable();
+	}
+
+}
